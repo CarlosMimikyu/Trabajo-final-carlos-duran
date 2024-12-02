@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#461F72FF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="377dp"
+        android:layout_height="662dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Formulario de informacion de usuario"
+            android:textColor="@color/black"
+
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/txtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su correo"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su nombre"
+            android:minHeight="48dp" />
+
+        <Spinner
+            android:id="@+id/spTrabajor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="tipo trabajador"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/txtRut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su rut"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/txtDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su direccion"
+            android:minHeight="48dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="enviarDatosFirestore"
+            android:text="Enviar Datos" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="CargarLista"
+            android:text="Cargar Datos" />
+
+        <Button
+            android:id="@+id/botonIngresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:onClick="onClickAcceder"
+            android:text="Ingresar Usuario" />
+
+
+        <ListView
+            android:id="@+id/lista"
+            android:layout_width="match_parent"
+            android:layout_height="296dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

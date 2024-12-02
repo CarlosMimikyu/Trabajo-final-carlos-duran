@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#461F72FF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="388dp"
+        android:layout_height="129dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Datos del sensor: "
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Dato"
+        android:textSize="30dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
